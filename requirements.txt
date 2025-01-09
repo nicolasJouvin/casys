@@ -1,0 +1,24 @@
+# ramp specifics
+ramp-workflow
+osfclient
+
+# generic datascience
+numpy
+scipy
+pandas
+lightgbm
+numba
+seaborn
+jupyterlab
+
+scikit-learn
+# the following are not allowed on purpose
+# pytorch
+# tensorflow
+# jax
+
+# dev
+flake8
+black
+
+# utils
