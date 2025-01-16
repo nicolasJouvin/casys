@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 import rampwf as rw
+import numpy as np
 from sklearn.model_selection import StratifiedGroupKFold
 
 problem_title = "CASYS"
@@ -18,7 +19,7 @@ score_types = [
 
 
 def get_cv(X, y):
-    cv = StratifiedGroupKFold(n_splits=5)
+    cv = StratifiedGroupKFold(n_splits=4)
     groups = X[:, 0]
     return cv.split(X, y, groups=groups)
 
