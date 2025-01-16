@@ -12,12 +12,12 @@ def _preprocess_X(X):
     This is a very basic preprocessor that only drops the "Parcelle" columns. A more refined pre-processing should be tried.
     """
 
-    # Remove the `"Parcelle"` column from features (cannot be used)
-    X_preprocessed = np.delete(X, _REMOVE_COL_IDX, axis=1)
+    # --- 1. Remove the `"Parcelle"` column from features (cannot be used)
+    X_otu = np.delete(X, _REMOVE_COL_IDX, axis=1)
 
-    # Implement your own pre-preprocessing
+    # --- 2. Implement your own pre-preprocessing
     # ...
-
+    X_preprocessed = X_otu
     return X_preprocessed
 
 
